@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 20px;
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: aqua;
+}
+
+
+.mat-header-cell {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mat-cell {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cell-color {
+  color: black;
+}
+
+.header-cell {
+  background-color: #98AFC7;
+  font-size: 40px;
+}
+
+.row-cell {
+  background-color: #F2FAFF;
+}

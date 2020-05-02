@@ -1,0 +1,53 @@
+<div class="test">
+  <div>
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+  </div>
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z2">
+    <div>
+      <!-- Index Column -->
+      <ng-container matColumnDef="Index">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> SNo. </th>
+        <td mat-cell *matCellDef="let element" class="cell-color"> {{element.Index}} </td>
+      </ng-container>
+
+      <!-- State Column -->
+      <ng-container matColumnDef="State">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> State </th>
+        <td mat-cell *matCellDef="let element" class="cell-color">{{element.State}}</td>
+      </ng-container>
+
+      <!-- Total Cases Column -->
+      <ng-container matColumnDef="Total Cases">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> Total Cases </th>
+        <td mat-cell *matCellDef="let element" class="cell-color"> {{element['Total Cases']}} </td>
+      </ng-container>
+
+      <!-- Active Cases Column -->
+      <ng-container matColumnDef="Cases Active">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> Cases Active </th>
+        <td mat-cell *matCellDef="let element" class="cell-color"> {{element['Cases Active']}} </td>
+      </ng-container>
+
+      <!-- Recovered Cases Column -->
+      <ng-container matColumnDef="Cases Recovered">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> Cases Recovered </th>
+        <td mat-cell *matCellDef="let element" class="cell-color"> {{element['Cases Recovered']}} </td>
+      </ng-container>
+
+      <!-- Deceased Cases Column -->
+      <ng-container matColumnDef="Cases Deceased">
+        <th mat-header-cell *matHeaderCellDef class="cell-color"> Cases Deceased </th>
+        <td mat-cell *matCellDef="let element" class="cell-color"> {{element['Cases Deceased']}} </td>
+      </ng-container>
+
+      <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns" style="background-color: #F2FAFF;font-size: 40px;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" style="background-color: #98AFC7;"
+        (click)="showDistricts(row)"></tr> -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" class="header-cell"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="row-cell" (click)="showDistricts(row)"></tr>
+    </div>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15, 20, 25, 30, 35]" showFirstLastButtons></mat-paginator>
+</div>

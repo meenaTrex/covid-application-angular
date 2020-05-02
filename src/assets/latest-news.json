@@ -1,0 +1,31 @@
+{
+  "news": [{
+      "title": "Pollution Hotspots as Green Zones",
+      "description": "Due to low pollution during lockdown,they have turned into green zones",
+      "summary": "Some pollution hotspots in Mumbai and Delhi have turned into green zones",
+      "fullContent": "Some pollution hotspots in Mumbai and Delhi have turned into green zones recording minimal or no pollution during lockdown: System of Air Quality Weather Forecasting and Research"
+    },
+    {
+      "title": "Covid-19: Karnataka to collect samples of journalists",
+      "description": "53 journalists samples taken in Mumbai",
+      "summary": "Karnataka chief minister directed the Information & Public Relations department to have the media personnel in the state examined for the infection",
+      "fullContent": "After 53 journalists in Mumbai were found positive for Covid-19, Karnataka chief minister BS Yediyurappa on Tuesday directed the Information & Public Relations department to have the media personnel in the state examined for the infection."
+    },
+    {
+      "title": "As 444 from Australia fly home, US nationals prefer to stay back",
+      "description": "Australia repatriated 444 of its nationals on a special flight from New Delhi to Melbourne over the weekend",
+      "summary": "US President Donald Trump tweeted that over 50,000 people had been taken back",
+      "fullContent": "As Australia repatriated 444 of its nationals on a special flight from New Delhi to Melbourne over the weekend, many others, particularly from the US, are opting to remain here, as US becomes the country worst hit by Covid-19."
+    },
+    {
+      "title": "Police officer dies of COVID-19 in Ludhiana",
+      "description": "On 18th April, The 52-year-old Ludhiana assistant commissioner of police died",
+      "summary": "A police officer died of covid-19",
+      "fullContent": "The 52-year-old Ludhiana assistant commissioner of police, who was undergoing treatment for COVID-19 at a private hospital, died on Saturday. ACP (North) Anil Kohli breathed his last at the SPS hospital, Ludhiana, civil surgeon Rajesh Bagga said."
+    }
+
+  ]
+
+
+
+}

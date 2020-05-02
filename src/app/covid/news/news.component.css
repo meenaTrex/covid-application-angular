@@ -1,0 +1,16 @@
+.news-card {
+  margin-left: 3%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 3%;
+}

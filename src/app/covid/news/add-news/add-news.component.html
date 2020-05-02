@@ -1,0 +1,79 @@
+<div class="card">
+  <div class="card-header header">
+    News Form
+  </div>
+  <div class="card-body">
+    <form [formGroup]="newsForm" (ngSubmit)="add()">
+      <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="title">
+          Title
+        </label>
+        <div class="col-md-8">
+          <input class="form-control" id="title" type="text" placeholder="Enter Title" formControlName="title"
+            [ngClass]="{
+                      'is-invalid': (newsForm.controls.title.touched || newsForm.controls.title.dirty) && !newsForm.controls.title.valid
+                  }" />
+          <span class="invalid-feedback">
+            <span *ngIf="newsForm.controls.title.errors?.required">
+              Please enter title for news
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="description">
+          Description
+        </label>
+        <div class="col-md-8">
+          <input class="form-control" id="description" type="text" placeholder="Enter Description"
+            formControlName="description" [ngClass]="{
+                      'is-invalid': (newsForm.controls.description.touched || newsForm.controls.description.dirty) && !newsForm.controls.description.valid
+                  }" />
+          <span class="invalid-feedback">
+            <span *ngIf="newsForm.controls.description.errors?.required">
+              Please enter news description
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="fullContent">
+          Full News
+        </label>
+        <div class="col-md-8">
+          <input class="form-control" id="fullContent" type="text" placeholder="Enter Full News"
+            formControlName="fullContent" [ngClass]="{
+                      'is-invalid': (newsForm.controls.fullContent.touched || newsForm.controls.fullContent.dirty) && !newsForm.controls.fullContent.valid
+                  }" />
+          <span class="invalid-feedback">
+            <span *ngIf="newsForm.controls.fullContent.errors?.required">
+              Please enter full news content
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="summary">
+          Summary
+        </label>
+        <div class="col-md-8">
+          <input class="form-control" id="summary" type="text" placeholder="Enter Summary" formControlName="summary"
+            [ngClass]="{
+                      'is-invalid': (newsForm.controls.summary.touched || newsForm.controls.summary.dirty) && !newsForm.controls.summary.valid
+                  }" />
+          <span class="invalid-feedback">
+            <span *ngIf="newsForm.controls.summary.errors?.required">
+              Please enter Summary
+            </span>
+          </span>
+        </div>
+      </div>
+      <div style="padding-left: 40%;">
+        <button class="btn btn-primary" type="submit" [disabled]="!newsForm.valid">Add</button>
+      </div>
+    </form>
+  </div>
+</div>

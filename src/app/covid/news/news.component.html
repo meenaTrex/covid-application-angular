@@ -1,0 +1,32 @@
+<div class="container ">
+  <div class="row" *ngIf="isLoggedIn">
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2 text-right" style="font-size: 20px;">
+      <button class="btn btn-primary" [routerLink]="['add']">
+        Add
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4" style="padding-top: 4%;" *ngFor="let latestnews of latestNewsArray">
+      <div class="card news-card">
+        <div class="card-header heading" style="background-color: #98AFC7">
+          <b>{{latestnews.title}}</b>
+        </div>
+        <div class="card-body" style="background-color:#F2FAFF">
+          <div>
+            {{latestnews.description}}
+          </div>
+          <hr>
+          <div class="description">
+            {{latestnews.fullContent}}
+          </div>
+        </div>
+        <div class="card-footer" style="background-color: #d6daee">
+          <i>{{latestnews.summary}}</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
