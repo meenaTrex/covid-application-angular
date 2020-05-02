@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import stateCovidData from '../../../assets/state-covid-data.json';
 import { IDistrict } from '../../shared/interfaces/district';
 import { IState } from '../../shared/interfaces/state';
 import statesData from '../../../assets/states.json';
@@ -19,7 +18,6 @@ export class GetStateDataService {
   districtData = districtData;
   districts: IDistrict;
   states: any = statesData.states;
-  data: any = stateCovidData;
   districtUrl: string = DistrictAPIUrl;
   covidUrl: string = CovidAPIUrl;
   map = new Map<string, any>();
